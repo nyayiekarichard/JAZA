@@ -109,4 +109,148 @@ nav ul li a {
 .login-container button:hover {
   background-color: #555;
 }
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.header .head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header .head label{
+  font-size: 36px;
+  display: none;
+}
+.header nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+header h1 {
+  font-size: 36px;
+  
+ 
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+header h1 {
+  font-size: 36px;
+  
+ 
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+@media(min-width:200px){
+  .header .head label{
+    display:flex;
+  }
+  .header nav{
+    display:none;
+  }
+  .header .head{
+    justify-content: space-between;
+  }
+  .login-container{
+    margin-top: 98px;
+  }
+}
+@media(min-width:600px){
+  .header .head label{
+    display:none;
+  }
+  .header nav{
+    display: flex;
+  }
+  .header .head{
+    justify-content: space-around;
+  }
+  .login-container{
+    margin-top: 200px;
+  }
+  .header .menuitems{
+    right: -300px;
+  }
+}
+.header .menuitems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #333;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 96px;
+  right: -300px;
+  padding-left: 10px;
+  transition: .5s ease-in-out;
+  
+
+}
+.header .menuitems a{
+  text-decoration: none;
+  color: white;
+}
+.header .menuitems li{
+  list-style-type: none;
+}
+
+
 

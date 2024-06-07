@@ -8,19 +8,31 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>JAZA FINANCE</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="loans.html">Get Loan</a></li>
-                    <li><a href="login.html" class="login-btn">Login</a></li>
-                </ul>
-            </nav>
+        <div class="header">
+          <div class="head">
+          <h1>JAZA FINANCE</h1>
+          <label class="menu">&#9776;</label>
         </div>
-    </header>
-
+          <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="loans.html">Get Loan</a></li>
+              <li><a href="login.html" class="login-btn">Login</a></li> 
+              <li><a href="profile.html" class="profile">My Profile</a></li> 
+            </ul>
+          </nav>
+          <ul class="menuitems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="loans.html">Get Loan</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li> 
+            <li><a href="profile.html" class="profile">My Profile</a></li> 
+          </ul>
+        </div>
+      </header>
     <main>
         <div class="register-container">
             <h2>Register</h2>
@@ -42,4 +54,19 @@
         </div>
     </main>
 </body>
+<script>
+    let menu= document.querySelector(".menu");
+    let menuitems= document.querySelector(".menuitems");
+    let menuOpen = false;
+    menu.addEventListener("click",function(e){
+      if(menuOpen){
+        menuitems.style.right="-300px";
+        menu.innerHTML= "&#9776;";
+      }else{
+        menuitems.style.right="0px";
+        menu.innerHTML = "&#10006;";
+      }
+    menuOpen= !menuOpen;
+    })
+    </script>
 </html>
