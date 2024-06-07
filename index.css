@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
+  scroll-behavior: smooth;
 }
 .header{
   display: flex;
@@ -46,6 +47,9 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 header h1 {
@@ -81,6 +85,7 @@ header nav ul li a:hover {
   color: #fff;
   text-align: center;
   padding: 100px 0;
+  margin-top: 126px;
 }
 
 #hero h2 {
@@ -183,6 +188,9 @@ footer {
   .header .head{
     justify-content: space-between;
   }
+  #hero{
+    margin-top: 98px;
+  }
 }
 @media(min-width:600px){
   .header .head label{
@@ -194,5 +202,35 @@ footer {
   .header .head{
     justify-content: space-around;
   }
+  #hero{
+    margin-top: 126px;
+  }
+  .header .menuitems{
+    right: -300px;
+  }
 }
+.header .menuitems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #333;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 96px;
+  right: -300px;
+  padding-left: 10px;
+  transition: .5s ease-in-out;
+  
+
+}
+.header .menuitems a{
+  text-decoration: none;
+  color: white;
+}
+.header .menuitems li{
+  list-style-type: none;
+}
+
+
 
