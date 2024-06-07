@@ -1,0 +1,154 @@
+
+html, body, header, footer, section, div, ul, li, p, h1, h2, h3, blockquote, cite, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+ 
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+
+#hero {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg'); /* Add your image path here */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffc107;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffca28;
+}
+
+#features {
+  padding: 50px 0;
+  background: beige;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 18px;
+  color: #666;
+}
+
+#testimonials {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.testimonial {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial blockquote{
+  font-style: italic;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial cite {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+#signup {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#signup h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#signup p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
