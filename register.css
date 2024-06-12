@@ -227,6 +227,9 @@ nav ul li a {
   .header .menuitems li{
     list-style-type: none;
   }
+  .register-container a{
+    text-decoration: none;
+  }
   
   
   

@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAZA FINANCE</title>
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <header>
     <div class="header">
       <div class="head">
-      <h1>JAZA FINANCE</h1>
-      <label class="menu">&#9776;</label>
-    </div>
+        <h1>JAZA FINANCE</h1>
+        <label class="menu">&#9776;</label>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="loans.html">Get Loan</a></li>
           <li><a href="sacco.html">Sacco</a></li>
-          <li><a href="login.html" class="login-btn">Login</a></li> 
-          <li><a href="profile.html" class="profile">My Profile</a></li> 
+          <li><a href="profile.html" class="profile">My Profile</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
         </ul>
       </nav>
       <ul class="menuitems">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="loans.html">Get Loan</a></li>
         <li><a href="sacco.html">Sacco</a></li>
-        <li><a href="login.html" class="login-btn">Login</a></li> 
-        <li><a href="profile.html" class="profile">My Profile</a></li> 
+        <li><a href="profile.html" class="profile">My Profile</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
       </ul>
     </div>
   </header>
@@ -40,7 +42,7 @@
     <div class="container">
       <h2>Get Instant Loans with Ease</h2>
       <p>Our app makes borrowing money quick and simple. Apply today!</p>
-      <a href="#signup" class="btn">Get Started</a>
+      <a href="register.html" class="btn">Get Started</a>
     </div>
   </section>
 
@@ -82,7 +84,7 @@
           "The loans requested are processed fast and have minimal charges!"
         </blockquote>
         <cite>- Leah Mokeira</cite>
-    </div>
+      </div>
   </section>
 
   <section id="signup">
@@ -100,18 +102,19 @@
   </footer>
 </body>
 <script>
-let menu= document.querySelector(".menu");
-let menuitems= document.querySelector(".menuitems");
-let menuOpen = false;
-menu.addEventListener("click",function(e){
-  if(menuOpen){
-    menuitems.style.right="-300px";
-    menu.innerHTML= "&#9776;";
-  }else{
-    menuitems.style.right="0px";
-    menu.innerHTML = "&#10006;";
-  }
-menuOpen= !menuOpen;
-})
+  let menu = document.querySelector(".menu");
+  let menuitems = document.querySelector(".menuitems");
+  let menuOpen = false;
+  menu.addEventListener("click", function (e) {
+    if (menuOpen) {
+      menuitems.style.right = "-300px";
+      menu.innerHTML = "&#9776;";
+    } else {
+      menuitems.style.right = "0px";
+      menu.innerHTML = "&#10006;";
+    }
+    menuOpen = !menuOpen;
+  })
 </script>
+
 </html>

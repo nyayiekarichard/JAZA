@@ -1,0 +1,314 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .head label {
+    font-size: 36px;
+    display: none;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+header h1 {
+    font-size: 36px;
+
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc107;
+}
+
+@media(min-width:200px) {
+    .header .head label {
+        display: flex;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .header .head {
+        justify-content: space-between;
+    }
+
+    #hero {
+        margin-top: 98px;
+    }
+}
+
+@media(min-width:600px) {
+    .header .head label {
+        display: none;
+    }
+
+    .header nav {
+        display: flex;
+    }
+
+    .header .head {
+        justify-content: space-around;
+    }
+
+    #hero {
+        margin-top: 126px;
+    }
+
+    .header .menuitems {
+        right: -300px;
+    }
+}
+
+.header .menuitems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 96px;
+    right: -300px;
+    padding-left: 10px;
+    transition: .5s ease-in-out;
+
+
+}
+
+.header .menuitems a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .menuitems li {
+    list-style-type: none;
+}
+
+.help {
+    margin-top: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+.help .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    justify-content: space-around;
+
+}
+
+.help .container .left {
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 400px;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.help .container .left .location {
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.help .container .left .number {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.help .container .left .email {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.help .container .right {
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 400px;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.help .container .right .location {
+    background-color: #9e9b9b;
+    border-radius: 5px;
+}
+
+.help .container .right .number {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.help .container .right .email {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.help .container .left .location h2 {
+    margin-left: 16px;
+
+}
+
+.help .container .left .location p {
+    margin-left: 16px;
+
+}
+
+.help .container .left .number h2 {
+    margin-left: 16px;
+
+}
+
+.help .container .left .number p {
+    margin-left: 16px;
+
+}
+
+.help .container .left .email h2 {
+    margin-left: 16px;
+
+}
+
+.help .container .left .email p {
+    margin-left: 16px;
+
+}
+.help .container .right .location {
+    background-color: #fff;
+    margin: 10px;
+}
+
+.help .container .right .number {
+    background-color: #fff;
+}
+
+.help .container .right .email {
+    background-color: #fff;
+}
+
+.help .container .left .location h2 {
+    margin-left: 16px;
+
+}
+
+.help .container .left .location p {
+    margin-left: 16px;
+
+}
+
+.help .container .right .number h2 {
+    margin-left: 16px;
+
+}
+
+.help .container .right .number p {
+    margin-left: 16px;
+
+}
+
+.help .container .right .email h2 {
+    margin-left: 16px;
+
+}
+
+.help .container .right .email p {
+    margin-left: 16px;
+
+}
+#signup {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #signup h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #signup p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffc107;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  #signup {
+    background-color: #333;
+    padding: 50px 0;
+  }

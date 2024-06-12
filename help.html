@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAZA FINANCE</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div class="head">
+          <h1>JAZA FINANCE</h1>
+          <label class="menu">&#9776;</label>
+        </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="loans.html">Get Loan</a></li>
+              <li><a href="sacco.html">Sacco</a></li> 
+              <li><a href="profile.html" class="profile">My Profile</a></li> 
+              <li><a href="help.html">Help</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </nav>
+          <ul class="menuitems">
+            <li><a href="index.html">Home</a></li>
+          <li><a href="loans.html">Get Loan</a></li>
+          <li><a href="sacco.html">Sacco</a></li> 
+          <li><a href="profile.html" class="profile">My Profile</a></li> 
+          <li><a href="help.html">Help</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="help">
+        <h1>HI, HOW CAN WE HELP YOU?</h1>
+        <div class="container">
+            <div class="left">
+                <div class="location">
+                    <h2>Our Location</h2>
+                    <p>Ngong Road Addams</p>
+                    <p>Commodore Suites</p>
+                </div>
+                <div class="number">
+                    <h2>Our Hotline</h2>
+                    <p>+254745646981</p>
+                </div>
+                <div class="email">
+                 <h2>To send us an email</h2>   
+                 <p>jazafinance1990@gmail.com</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="location">
+                    <h2>For Advive</h2>
+                    <p>call:+254745646981 </p>
+                    <p>call:+254567896422 </p>
+
+                </div>
+                <div class="number">
+                    <h2>About us</h2>
+                    <p> Financial Institution</p>
+                </div>
+                <div class="email">
+                 <h2>To find us on social media.</h2>   
+                 <p>IG @jazafinanceltd</p>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <section id="signup">
+        <div class="container">
+          <h2>Get Your Loan Now</h2>
+          <p>Start your loan application today and get the funds you need.</p>
+          <a href="loans.html" class="btn">Get Loan</a>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <p>&copy; 2024 JAZA FINANCE</p>
+        </div>
+      </footer>
+</body>
+<script>
+    let menu= document.querySelector(".menu");
+    let menuitems= document.querySelector(".menuitems");
+    let menuOpen = false;
+    menu.addEventListener("click",function(e){
+      if(menuOpen){
+        menuitems.style.right="-300px";
+        menu.innerHTML= "&#9776;";
+      }else{
+        menuitems.style.right="0px";
+        menu.innerHTML = "&#10006;";
+      }
+    menuOpen= !menuOpen;
+    })
+    </script>
+</html>
